@@ -1,23 +1,193 @@
+<!DOCTYPE html>
 <html>
  <head>
   <title> WebBarnwal</title>
   <meta name="viewport" Content="width=device-width">
   <meta name="X-UA-compatible" Content="IE-edge">
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+  body{
+   height:100%;
+	  }
+	.menu{ background:rgba(0,0,0,0.8);height:57px; color:brown;position:fixed;
+      }	
+	.menu .navbar-default{ background:none; border:none;
+	  }
+	.menu .navbar-nav .active a, .menu .navbar-nav .active a:hover{background:#2d2930; color:#ffbf80;
+      }	
+	.menu .navbar-nav li a:hover{background:#2d2930; color:white;
+	  }
+
+   nav strong{
+    color:White;
+	font-size:26px;
+	margin-left:22px;
+	}
+	nav strong:hover{text-shadow: 2px 2px 10px white;
+	}
+   nav a{
+   font-size:20px;
+   }
+   nav a:hover{
+    color:white;text-decoration:none;
+	}
+   .face_photo{
+     height:100%;
+	 margin-left:-14px;
+	 }
    .first{
-    top:14%; left:20%; color:white; font-size:45px; position:absolute;
+    top:15%;left:3%; color:white; font-size:40px; position:absolute;text-shadow:7px 7px 18px white;
+	animation: blinker 2s linear infinite;
    }
+   @keyframes blinker{
+     50% {opacity:0.5;}
+	 }
+   
    .second{
-    top:36%; left:23%; color:#ccff99; font-size:55px;position:absolute;
+    bottom:3%;font-family:cursive; right:2%; color: #d2dad8; font-size:40px; position:absolute; text-shadow:10px 10px 13px orange;
    }
-  </style>
+
+	 .screen{
+	  background:url(homebg.jpg);
+	  height:100%;
+      width:100%;	 
+	  }
+	.footer{ background:#232323; padding-bottom:20px; 
+	  }
+	.footer1{ color:#ffffb3; }
+	.footer .part1 h3{ color:#ffffb3;} 
+    .part1{border-style:dotted; }	
+	.part1 label{ color:white; font-size:19px;}
+	.part1 input{ height:35px; width:96%;border-radius:5px; }
+	.part1 textarea{ height:100px; width:96%; border-radius:5px; }
+	
+	.link h3{ color: #ffffb3; }
+	.link #me{ color:white; font-size:15px; margin-top:15px;}
+	.link i{ padding:7px; font-size: 3rem; }
+	.link i:hover{ background:white; border-radius:8px;  }
+	
+	.Address h3{ color:#ffffb3; }
+	.Address #add{ color:white; font-size:17px;margin-top:15px; }
+	.Address   i{ padding-right: 10px;font-size:2.4rem; }
+	.footer #copy{ color:white; font-size:12px; }
+	
+	</style>
  </head>
   <body>
-   <div class="container-fluid">
-<img src="akash.JPG" alt="my pic" width="99%" height="680px">
-    <h1 class="first"> Let's Get To Know Each Other Better</h1>
-    <h3 class="second">I'm Akash kumar Barnwal </h3>
-   </div>
+
+<script>
+function func(){
+ var name= document.formm.name.value;
+ var email= document.formm.email.value;
+ if(name==""||name=="null")
+  { 
+    alert("Name must be filled");
+	}
+ alert("Have you correctly fill the form");
+}
+ </script>
+  
+<div class="container-fluid ">
+ <div class="row">
+  <div class="col-sm-12 col-xs-12 menu">
+   <nav class="navbar navbar-default">
+    <div class="navbar-header">
+     <strong>WebBarnwal</strong>&nbsp &nbsp &nbsp &nbsp  
+	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar1" aria-expanded="false">
+	 
+	   <span class="icon-bar"> </span>
+	   <span class="icon-bar"> </span>
+	   <span class="icon-bar"> </span>
+	 </button>
+	</div>
+	
+    <div class="collapse navbar-collapse" id="mynavbar1">
+	<ul class="nav navbar-nav pull-right">
+	
+       <li class="active"><a href="#">Home </a></li>
+       <li><a href="#">Portfolio </a></li>
+	   <li><a href="#">Learn </a></li>
+	   <li><a href="">Cotact </a></li>
+	   </ul>
+	 </div>
+  </nav>
+  </div>
+</div></div>
+  
+<div class="container-fluid face_photo">
+  <img src="akash1.JPG" width="100%" height="100%">
+        
+       <div class="first wow ZoomIn"data-wow-delay=".4s""">
+	<h1"> <strong>L</strong>et's Get To Know Each Other Better</h1> </div>
+    
+	<div class="second wow ZoomIn"data-wow-delay="0.7s""">
+    	I'm... <br/><strong style="color:white;">A</strong>kash 
+		<strong style="color:white;">k</strong>umar <strong style="color:white;">B</strong>arnwal </div>
+</div>
+  
+<div class="container-fluid screen">
+                                   <h1 style="color:white;font-family:cursive;">Work Is Under_Construction</h1>
+</div>
+   
+
+<div class="container-fluid footer">
+  <div class="footer1 text-center">
+    <h1>Contact </h1>
+	<p>You can call me directly or either mail-me.</p>
+	</div>
+    <div class="row">
+      <div class="col-sm-3 col-xs-12 part1">
+	   <h3>Leave a Message</h3>
+	   <form action="#" name="formm" id="formid">
+	     <label>Name:</label><br/>
+	     <input type="text" name="name"placeholder="Enter Your name" required><br/></input>
+		 <label>E-mail:</label><br/>
+		 <input type="text" name="email"placeholder="Enter Your Mail-Id" required><br/></input>
+		 <label>Message:</label><br/>
+		 <textarea type="area" name="message" placeholder="Type Your Message" ></textarea><br/><br/>
+		 <input style="background:#2e004d;color:white; width:108px;" id="but" type="Submit" value="Submit" onclick="func()"></input>
+	   </form>
+	  </div>
+	  <div class="col-sm-1"></div>
+	  <div class="col-sm-3 link">
+       <h3><u>About Me</u></h3>
+		<section id="me">
+		I value people over profits, quality over quantity, and keeping it real. As such, I deliver an unmatched working
+		relationship with my clients.My team is intentionally small, eclectic, and skilled; with our in-house expertise.
+	    </section> <br/><br/><br/>
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+		 <i class="fa fa-instagram"></i>	
+		 <i class="fa fa-whatsapp"></i>
+		 <i class="fa fa-dribbble"></i>
+         <i class="fa fa-behance"></i>		 
+		   
+		</div>
+		
+	  <div class="col-sm-1"></div>
+	  <div class="col-sm-4 Address">
+         <h3> Address:- </h3>
+		 <section id="add">
+    	 <i class="fa fa-home"></i>  Jainamore,Bokaro Steel City<br/>
+		&nbsp &nbsp &nbsp &nbsp Jharkhand, <b> I</b>ndia, 
+		  &nbsp &nbsp(829301) <br/>
+		<i class="fa fa-phone"></i> +919709171870 <br/>
+		<i class="fa fa-envelope"></i> akashkumarbarnwal666@gmail.com <br/>
+		  </section>
+		  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		  <section id="copy">
+		  &copyCopyright are Reserved</br>
+          Designed: Akash Kumar Barnwal (+919709171870) </section>		  
+	  </div>
+</div></div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="wow.min.js"></script>
+       <script>
+      new WOW().init();
+      </script>
+<script type="text/javascript" src="bootstrap.js"></script>
   </body>
 </html>
