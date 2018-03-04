@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
  <head>
   <title> WebBarnwal</title>
@@ -7,76 +7,60 @@
   <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="ninja-slider.js"></script>
   <style>
-  body{
-   height:100%;
-	  }
-	.menu{ background:rgba(0,0,0,0.8);height:57px; color:brown;position:fixed;
-      }	
-	.menu .navbar-default{ background:none; border:none;
-	  }
-	.menu .navbar-nav .active a, .menu .navbar-nav .active a:hover{background:#2d2930; color:#ffbf80;
-      }	
-	.menu .navbar-nav li a:hover{background:#2d2930; color:white;
-	  }
-
-   nav strong{
-    color:White;
-	font-size:26px;
-	margin-left:22px;
-	}
-	nav strong:hover{text-shadow: 2px 2px 10px white;
-	}
-   nav a{
-   font-size:20px;
-   }
-   nav a:hover{
-    color:white;text-decoration:none;
-	}
-   .face_photo{
-     height:100%;
-	 margin-left:-14px;
-	 }
-   .first{
-    top:15%;left:3%; color:white; font-size:40px; position:absolute;text-shadow:7px 7px 18px white;
-	animation: blinker 2s linear infinite;
-   }
-   @keyframes blinker{
-     50% {opacity:0.5;}
-	 }
-   
-   .second{
-    bottom:3%;font-family:cursive; right:2%; color: #d2dad8; font-size:40px; position:absolute; text-shadow:10px 10px 13px orange;
-   }
-
-	 .screen{
-	  background:url('homebg.jpg');
-	  height:100%;
-      width:100%;	 
-	  }
-	.footer{ background:#232323; padding-bottom:20px; 
-	  }
-	.footer1{ color:#ffffb3; }
-	.footer .part1 h3{ color:#ffffb3;} 
-    .part1{border-style:dotted; }	
-	.part1 label{ color:white; font-size:19px;}
-	.part1 input{ height:35px; width:96%;border-radius:5px; }
-	.part1 textarea{ height:100px; width:96%; border-radius:5px; }
-	
-	.link h3{ color: #ffffb3; }
-	.link #me{ color:white; font-size:15px; margin-top:15px;}
-	.link i{ padding:7px; font-size: 3rem; }
-	.link i:hover{ background:white; border-radius:8px;  }
-	
-	.Address h3{ color:#ffffb3; }
-	.Address #add{ color:white; font-size:17px;margin-top:15px; }
-	.Address   i{ padding-right: 10px;font-size:2.4rem; }
-	.footer #copy{ color:white; font-size:12px; }
 	
 	</style>
  </head>
   <body>
 
+        <header id="main_menu" class="header navbar-fixed-top">            
+            <div class="main_menu_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="nave_menu">
+                            <nav class="navbar navbar-default" id="navmenu">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#home">
+                                        <strong>WebBarnwal</strong><br/>
+                                        </a>
+                                    </div>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#cleancode">Service</a></li>
+                                            <li><a href="#portfolio">portfolio</a></li>
+                                            <li><a href="#footer1">Counter Us</a></li>
+                                            <li><a href="#footer">Contact</a></li>
+                                        </ul>    
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>	
+                    </div>
+
+                </div>
+
+            </div>
+        </header> 
+
+		
 <script>
 function func(){
  var name= document.formm.name.value;
@@ -84,64 +68,149 @@ function func(){
  if(name==""||name=="null")
   { 
     alert("Name must be filled");
+	return false;
 	}
  alert("Have you correctly fill the form");
 }
  </script>
+
+
   
-<div class="container-fluid ">
- <div class="row">
-  <div class="col-sm-12 col-xs-12 menu">
-   <nav class="navbar navbar-default">
-    <div class="navbar-header">
-     <strong>WebBarnwal</strong>&nbsp &nbsp &nbsp &nbsp  
-	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar1" aria-expanded="false">
-	 
-	   <span class="icon-bar"> </span>
-	   <span class="icon-bar"> </span>
-	   <span class="icon-bar"> </span>
-	 </button>
-	</div>
-	
-    <div class="collapse navbar-collapse" id="mynavbar1">
-	<ul class="nav navbar-nav pull-right">
-	
-       <li class="active"><a href="#">Home </a></li>
-       <li><a href="#">Portfolio </a></li>
-	   <li><a href="#">Learn </a></li>
-	   <li><a href="">Cotact </a></li>
-	   </ul>
-	 </div>
-  </nav>
-  </div>
+<div class="container-fluid screen"><br/><br/><br/><br/>
+<div class="row">
+ <div id="ninja-slider">
+         <a style="color:white;text-decoration:none;" href="mailto:akashkumarbarnwal666@gmail.com">
+         <div  class="mail">
+			  Mail Me <i class="fa fa-envelope"></i> </div></a>
+  
+     <div class="slider-inner">
+            <ul> <li>
+                    <img class="ns-img" src="akash1.jpg" style="cursor:pointer;" />
+					<div class="caption cap1">Welcome To My Pace</div>
+                    <div class="caption cap1 cap2">Lets get to know each other</div>
+                    
+                </li>
+			     <li>
+                    <img class="ns-img" src="akash_fp.jpg" style="cursor:pointer;" />
+					<div class="caption cap1">I am...</div>
+                    <div class="caption cap1 cap2"><b> Akash kumar Barnwal </b></div>
+                    
+                </li>
+				 <li>
+                    <img class="ns-img" src="akash_fp3.jpg" style="cursor:pointer;" />
+					<div class="caption cap1">My First Repo</div>
+                    <div class="caption cap1 cap2">Its Responsive</div>
+                    
+                </li>
+                </ul>
+            
+        </div>	    	 
+		  
+     </div> 	 
+</div>
+</div>
+
+
+
+<div class="container-fluid cleancode">
+       <h1 class="wow flash" data-wow-delay=".6s"">My First Repo</h1> 
+	   <div class="row">
+         <div class="col-sm-8 tab-content wow bounceInLeft" data-wow-delay=".7s"">
+      
+	     <section>I tried to make very-high quality designed and code is written in very neat and clean manner. 
+         I have taken the help of Internet to designed it in more attractive way.
+		 I have basically use HTML, CSS, JavaScript, Bootstrap and many more plugins. 
+		 There are lot of web based communities like-FreeCodeCamp, SoloLearn, JavaScript Tutorial which helps me a lot to know more about the 
+		 web based technology and how much patience is require for getting success.
+	     This webpage is responsive. 
+	     </div>
+		 <div class="col-sm-4 wow bounceInRight" data-wow-delay=".7s"">
+	      <img src="responsive.png" width="97%" height="45%"></div>
 </div></div>
   
-<div class="container-fluid face_photo">
-  <img src="akash1.jpg" width="100%" height="615px">
-        
-       <div class="first wow ZoomIn"data-wow-delay=".4s""">
-	<h1"> <strong>L</strong>et's Get To Know Each Other Better</h1> </div>
-    
-	<div class="second wow ZoomIn"data-wow-delay="0.7s""">
-    	I'm... <br/><strong style="color:white;">A</strong>kash 
-		<strong style="color:white;">k</strong>umar <strong style="color:white;">B</strong>arnwal </div>
-</div>
-  
-<div class="container-fluid screen">
-         <div class="row">
-<div class="col-sm-12 col-xs-12">
-<h2 style="color:white;font-family:cursive;text-align:center;padding-top:100px;">Work Is Under_Construction</h2>
-</div>
-</div>
-</div>
-   
 
+	<div class="container-fluid gallery">
+	     <center><h1><b>My Gallery</b></h1></center>
+	     <div class="row ">
+		     <div class="col-sm-2 menu wow bounceInLeft" data-wow-delay="1.2s"">
+		     <img id="gal" src="gallery1.jpg" alt="my gallery" width="113%" height="230px">
+			 <center><p> <br/></br> <b> IIT KTJ </b>
+			 <br/> Jan,2018 </p> </center>
+			 </img></div>
+			 
+			 <div class="col-sm-2 menu wow bounceInLeft" data-wow-delay=".8s"">
+		     <img id="gal" src="gallery4.jpg" alt="my gallery" width="113%" height="230px">
+			 <center><p> <br/></br> <b> Chandipur Beach </b>
+			 <br/> March,2018 </p> </center>
+			 </img></div>
+			 
+			 <div class="col-sm-2 menu wow bounceInLeft" data-wow-delay=".4s"">
+		     <img id="gal" src="gallery3.jpg" alt="my gallery" width="113%" height="230px">
+			 <center><p> <br/></br> <b> College Time </b>
+			 <br/> Aug,2017 </p> </center>
+			 </img></div>
+			 
+			  <div class="col-sm-2 menu wow bounceInRight" data-wow-delay=".4s"">
+		     <img id="gal" src="gallery6.jpg" alt="my gallery" width="113%" height="230px">
+			 <center><p> <br/></br> <b> Fun </b>
+			 <br/> Jan,2017 </p> </center>
+			 </img></div>
+			 
+		     <div class="col-sm-2 menu wow bounceInRight" data-wow-delay=".8s"">
+		     <img id="gal" src="gallery5.jpg" alt="my gallery" width="113%" height="230px">
+			 <center><p> <br/></br> <b> IIT KTJ </b>
+			 <br/> Jan,2018 </p> </center>
+			 </img></div>
+			 
+			 <div class="col-sm-2 menu wow bounceInRight" data-wow-delay="1.2s"">
+		     <img id="gal" src="gallery2.jpg" alt="my gallery" width="99%" height="230px">
+			 <center><p> <br/></br> <b> Family Pic</b>
+			 <br/> Jan,2017 </p> </center>
+			 </img></div>
+	     </div>
+    </div>
+	
+
+<div class="news">
+    <div class="container">
+         <div class="row"> <center> <h2>-: <u>News</u> :-</h2> </center>	
+             <div class="col-sm-7 news-content">
+                 <ul>
+				     <li class="wow bounceInLeft" data-wow-delay=".6s""><h2>An Institution Website</h2>
+					     <p>Recently I have developed a website for an institute. Its domain name is <a href="http://amitclasses.ml">
+						     www.amitclasses.ml </a>. Website is basically designed with HTML, CSS, Bootstrap, JavaScript, Jquerry and many more plugins.
+							 </p>
+					  </li>
+                     <li class="wow bounceInLeft" data-wow-delay="1s""><h2>Flying Objects</h2>
+                          <p>In this, I worked with a team of 6 members. Firstly we make glider. It is controlled by 
+                              a Six-Channel transmitter which have the capability to control the plane in range of 1 km. After that we had made cargo. </p>
+						</li>
+					     <li class="wow bounceInLeft" data-wow-delay="1.4s""><h2>Black Piller</h2>
+                          <p>Black Piller is nothing but just a name of project.
+                             Under this when we will pour Conc.Sulphuric Acid to container containing Sugar, all the water constitute of sugar is dehydrated.
+							 And a Black piller shape of shape become started to raise. 
+							 </p>
+						</li> 	
+	             </ul>
+             </div>
+             <div class="col-sm-5">
+			  <div class="col-sm-6">
+			  <img src="News5.png" width="111%" height="200px"></div>
+			  <div class="col-sm-6"> <img src="News3.png" width="110%" height="200px"><br/></div>
+			  <img src="News4.jpg" width="99.5%" height="200px">
+              </div>
+         </div>
+     </div>	
+</div>	
+
+	  
+			 
 <div class="container-fluid footer">
-  <div class="footer1 text-center">
-    <h1>Contact </h1>
-	<p>You can call me directly or either mail-me.</p>
-	</div>
-    <div class="row">
+    <div class="footer1 text-center">
+     <h1>Contact </h1>
+	 <p>You can call me directly or either mail-me.</p>
+	 </div>
+     <div class="row">
       <div class="col-sm-3 col-xs-12 part1">
 	   <h3>Leave a Message</h3>
 	   <form action="#" name="formm" id="formid">
@@ -181,11 +250,11 @@ function func(){
 		<i class="fa fa-envelope"></i> akashkumarbarnwal666@gmail.com <br/>
 		  </section>
 		  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-		  <section id="copy">
-		  &copyCopyright are Reserved</br>
-          Designed: Akash Kumar Barnwal (+919709171870) </section>		  
+		  <section id="copy">--: WebBarnwal :--<br/>
+          Designed By: Akash Kumar Barnwal (+919709171870) </section>		  
 	  </div>
 </div></div>
+
 
 <script type="text/javascript" src="jquery.js"></script>
 <script src="wow.min.js"></script>
@@ -193,5 +262,6 @@ function func(){
       new WOW().init();
       </script>
 <script type="text/javascript" src="bootstrap.js"></script>
-  </body>
+
+</body>
 </html>
