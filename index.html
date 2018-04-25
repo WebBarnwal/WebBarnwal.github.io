@@ -41,9 +41,9 @@
 
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#home" class="active scroll">Home</a></li>
                                             <li><a href="#cleancode" class="scroll">Service</a></li>
-                                            <li><a href="#portfolio">portfolio</a></li>
+                                            <li><a href="#portfolio" class="scroll">portfolio</a></li>
                                             <li><a href="#footer" class="scroll">Counter Us</a></li>
                                             <li><a href="#footer" class="scroll">Contact</a></li>
                                         </ul>    
@@ -57,8 +57,8 @@
                 </div>
 
             </div>
-        </header> 
-
+        </header>
+	
 		
 <script>
 function func(){
@@ -111,7 +111,7 @@ function func(){
 
 
 
-<div class="container-fluid cleancode" id="cleancode">
+<div class="container-fluid cleancode">
        <h1 class="wow flash" data-wow-delay=".6s"">My First Repo</h1> 
 	   <div class="row">
          <div class="col-sm-8 tab-content wow bounceInLeft" data-wow-delay=".7s"">
@@ -172,19 +172,20 @@ function func(){
 
 <div class="news">
     <div class="container">
-         <div class="row"> <center> <h1> A Little About Me </h1> </center>	
+         <div class="row"> <center> <h1> A Little About Me </h1> </center>	<br/>
              <div class="col-sm-7 news-content">
-                 <ul>
-				     <li class="wow bounceInLeft" data-wow-delay=".5s""><h2>An Institution Website</h2>
+                    <ul>
+				     <li class="wow bounceInLeft" data-wow-delay=".3s""> <h2>An Institution Website</h2>
 					     <p>Recently I have developed a website for an institute. Its domain name<br/> is <a href="http://amitclasses.ml">
 						     www.amitclasses.ml </a>. Website is basically designed with HTML, CSS, Bootstrap, JavaScript, Jquerry and many more plugins.
 							 </p>
 					  </li>
-                     <li class="wow bounceInLeft" data-wow-delay=".7s""><h2>Flying Objects</h2>
+                     <li class="wow bounceInLeft" data-wow-delay=".5s""><h2>Flying Objects</h2>
                           <p>In this, I worked with a team of 6 members. Firstly we make glider. It <br/>is controlled by 
-                              a Six-Channel transmitter which have the capability to control the plane in range of 1 km. After that we had made cargo. </p>
+                              a Six-Channel transmitter which have the capability to control the plane in range of 1 km.
+							  After that we had made cargo. </p>
 						</li>
-					     <li class="wow bounceInLeft" data-wow-delay="1s""><h2>Black Piller</h2>
+					     <li class="wow bounceInLeft" data-wow-delay=".8s""><h2>Black Piller</h2>
                           <p>Black Piller is nothing but just a name of project.
                              Under this when we<br/> will pour Conc.Sulphuric Acid to container containing Sugar, all the<br/> water constitute of sugar is dehydrated.
 							 And a Black piller shape of shape become started to raise. 
@@ -193,11 +194,19 @@ function func(){
 	             </ul>
              </div>
              <div class="col-sm-5">
-			  <div class="col-sm-6">
-			  <img src="News5.png" width="100%" height="200px"></div>
-			  <div class="col-sm-6"> <img src="News3.png" width="100%" height="200px"><br/></div> 
-			  <img src="News4.jpg" width="100%" height="200px">
-              </div></div>
+		        <div id="mainDiv">
+                 <div id="boxDiv">
+	                  <div id="front"> <img src="News2.jpg" width="100%" height="260px"></div>
+	                  <div id="back"> <img src="News4.jpg" width="100%" height="260px">	</div>
+	                  <div id="left"><img src="News3.png" width="100%" height="260px"></div>
+	                  <div id="right"><img src="News5.png" width="100%" height="260px"></div>
+	                  <div id="top">Akash Barnwal</div>
+	                  <div id="bottom">Web-Designer</div>
+    </div>
+</div>
+			  
+              </div>
+			 </div>
          </div>
      </div>	
 </div>	
