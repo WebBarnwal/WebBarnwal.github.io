@@ -396,13 +396,17 @@
    }
   
 .news{
-background:url('gif6.gif');
+background:#58595b;
 color: #bba;
 padding:5% 2% 10% 0%;
+height:auto;
+
+border-top:11px solid black;
 list-style:none;
 }	
 .news h1{ 
      color:white;
+	 margin-top:-2%;
 	 font-weight:bold;
 	 animation: blinker 2s linear infinite;
 }
@@ -416,8 +420,8 @@ list-style:none;
 	color:#e7eedd; 
 }
 .news li{
-	border:3px solid #002b80;
-	background: #4d94ff;
+	border:3px solid #0b0e14;
+	background: #3a414f;
 	padding:10px;
 	padding-right:7%;
 	font-size:16px;
@@ -426,7 +430,7 @@ list-style:none;
 	
 }
 .news li:hover{
-	background: #003380;
+	background: radial-gradient(#212833,#161d28,#01060f);
 	color:white;
 	padding-left:30px;
 }
@@ -439,6 +443,65 @@ list-style:none;
     transition: ease-in-out 0.4s;
 	overflow:hidden;
 }
+
+/** 3-D Animation Start **/
+#mainDiv{
+    width:260px;
+	height:260px;
+	margin:100px auto;
+	perspective:520px;
+}
+#boxDiv{
+	width:260px;
+	transform-style: preserve-3d;
+	animation: rotate 15s linear infinite;
+}
+#boxDiv div{
+	width:260px;
+	height:260px;
+	position:absolute;
+	opacity:0.9;
+	color:white;
+	font: 70px impact;
+	text-align:center;
+}
+#front{
+	transform:translateZ(120px);
+	background:black;
+}
+#back{
+	transform: rotateY(180deg) translateZ(130px);
+	background:#101010;
+}
+#left{
+	transform:rotateY(-90deg) translateX(-130px);
+	transform-origin:left;
+	background:black;
+}
+#right{
+	transform:rotateY(90deg) translateX(130px);
+	transform-origin:right;
+	background:#101010;
+}
+#top{
+	transform:rotateX(-90deg) translateY(-130px);
+	transform-origin:top;
+	background:black;
+}
+#bottom{
+	transform:rotateX(90deg) translateY(130px);
+	transform-origin:bottom;
+	background:#101010;
+}
+
+@keyframes rotate{
+	0%{transform: rotateY(0); }
+	100%{transform: rotateY(360deg); }
+}
+/** 3-D Animation End **/
+
+
+
 .pdf_download h1{
 	text-align:center;
 	color:blue;
@@ -467,7 +530,10 @@ keyframes @blinker{
 	text-decoration:none;
 }
 	
-.footer{ background:#232323; padding-bottom:20px; 
+.footer{ 
+         background:#232323;
+         padding-bottom:20px;
+		 
 	  }
 	.footer input,textarea{ background:#232323;border-color:#b3b3b3;color:white; }
 	.footer1{ color:#ffffb3; }
